@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>V&V Construcciones SPA | Construcción y Remodelación</title>
+  <meta name="description" content="V&V Construcciones SPA: Construcción, remodelación, ampliación, pintura, rejas, cobertizos y más. Cotiza por WhatsApp."/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand__mark">V&V</span>
+        <span class="brand__txt">
+          <strong>V&V Construcciones SPA</strong>
+          <small>Confianza y calidad de principio a fin</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a class="nav__link" href="#inicio">Inicio</a>
+        <a class="nav__link" href="#nosotros">Nosotros</a>
+        <a class="nav__link" href="#proyectos">Proyectos</a>
+        <a class="nav__link" href="#noticias">Noticias</a>
+        <a class="nav__link nav__cta" target="_blank" rel="noopener"
+           href="https://wa.me/56991201418?text=Hola%20V%26V%20Construcciones%2C%20me%20gustar%C3%ADa%20cotizar%20un%20trabajo.">
+          WhatsApp
+        </a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO / INICIO -->
+  <section class="hero" id="inicio" aria-label="Inicio">
+    <div class="hero__bg" role="img" aria-label="Planos de construcción"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__content">
+      <div class="hero__left reveal">
+        <p class="hero__kicker">No solo construimos, también hacemos realidad tus proyectos.</p>
+        <h1 class="hero__title">Construcción, remodelación y ampliaciones con terminación profesional.</h1>
+        <p class="hero__sub">
+          Personal capacitado para llevar tu proyecto de principio a fin. Cotiza rápido por WhatsApp y agenda visita.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" target="_blank" rel="noopener"
+             href="https://wa.me/56991201418?text=Hola%20V%26V%20Construcciones%2C%20me%20gustar%C3%ADa%20cotizar%20un%20trabajo.">
+            Cotizar por WhatsApp
+          </a>
+          <a class="btn btn--ghost" href="#proyectos">Ver proyectos</a>
+        </div>
+
+        <div class="hero__chips">
+          <span class="chip">✅ Responsabilidad</span>
+          <span class="chip">✅ Trabajo limpio</span>
+          <span class="chip">✅ Buenas terminaciones</span>
+          <span class="chip">✅ Presupuesto claro</span>
+        </div>
+      </div>
+
+      <aside class="hero__card reveal">
+        <h3>Mensaje rápido</h3>
+        <p class="muted">Escribes acá y se abre WhatsApp con tu mensaje listo.</p>
+
+        <div class="formMini">
+          <input id="q_name" type="text" placeholder="Tu nombre (opcional)" autocomplete="name">
+          <select id="q_service">
+            <option>Construcción</option>
+            <option>Remodelación</option>
+            <option>Ampliación</option>
+            <option>Pintura</option>
+            <option>Rejas / Portones</option>
+            <option>Cobertizos / Quinchos</option>
+            <option>Otro</option>
+          </select>
+          <textarea id="q_msg" rows="3" placeholder="Comuna + medidas + fecha ideal..."></textarea>
+          <button class="btn btn--primary w100" id="q_send">Enviar</button>
+          <small class="muted">Tip: comuna + medidas = respuesta más rápida.</small>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="section" id="nosotros">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__tag">Bienvenido</p>
+        <h2>Somos V&V Construcciones SPA</h2>
+        <p class="section__desc">
+          Nos enfocamos en entregar soluciones sólidas y estéticas: construcción, remodelación, ampliación,
+          pintura, rejas/portones, cobertizos y quinchos.
+        </p>
+      </div>
+
+      <div class="about reveal">
+        <div class="about__box">
+          <h3>Lo que nos diferencia</h3>
+          <ul class="list">
+            <li>Planificación y orden en el trabajo</li>
+            <li>Comunicación clara durante el proceso</li>
+            <li>Enfoque en terminaciones y detalles</li>
+            <li>Compromiso con fechas y limpieza</li>
+          </ul>
+          <a class="link" href="#contacto">Ver más / Contactar →</a>
+        </div>
+
+        <div class="about__stats">
+          <div class="stat">
+            <strong>Servicios</strong>
+            <span>Construcción y mejoras</span>
+          </div>
+          <div class="stat">
+            <strong>Enfoque</strong>
+            <span>Calidad y confianza</span>
+          </div>
+          <div class="stat">
+            <strong>Atención</strong>
+            <span>WhatsApp directo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="section section--alt" id="proyectos">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2>Proyectos destacados</h2>
+        <p class="section__desc">Fotos en tamaño más pequeño. Haz clic para ver en grande.</p>
+      </div>
+
+      <!-- Filtros -->
+      <div class="filters reveal" role="tablist" aria-label="Filtros de proyectos">
+        <button class="filter is-active" data-filter="all" role="tab">Todo</button>
+        <button class="filter" data-filter="portones" role="tab">Portones / Rejas</button>
+        <button class="filter" data-filter="ampliaciones" role="tab">Ampliaciones</button>
+        <button class="filter" data-filter="quinchos" role="tab">Quinchos</button>
+      </div>
+
+      <!-- Cards (SIN NOMBRES SOBRE LAS IMÁGENES) -->
+      <div class="projects reveal" id="projects">
+        <article class="project" data-cat="portones">
+          <button class="project__img" data-full="assets/contru porton.jpeg" aria-label="Abrir imagen">
+            <img src="assets/contru porton.jpeg" alt="Proyecto 1" loading="lazy">
+          </button>
+          <div class="project__meta">
+            <div class="project__badges">
+              <span class="badge">Trabajo</span>
+              <span class="badge badge--soft">Portones / Rejas</span>
+            </div>
+            <p class="muted">Cotiza un diseño similar por WhatsApp.</p>
+          </div>
+        </article>
+
+        <article class="project" data-cat="ampliaciones">
+          <button class="project__img" data-full="assets/ampliacion.jpg" aria-label="Abrir imagen">
+            <img src="assets/ampliacion.jpg" alt="Proyecto 2" loading="lazy">
+          </button>
+          <div class="project__meta">
+            <div class="project__badges">
+              <span class="badge">Trabajo</span>
+              <span class="badge badge--soft">Ampliación</span>
+            </div>
+            <p class="muted">Revisa medidas y plazos estimados.</p>
+          </div>
+        </article>
+
+        <article class="project" data-cat="quinchos">
+          <button class="project__img" data-full="assets/quincho.jpg" aria-label="Abrir imagen">
+            <img src="assets/quincho.jpg" alt="Proyecto 3" loading="lazy">
+          </button>
+          <div class="project__meta">
+            <div class="project__badges">
+              <span class="badge">Trabajo</span>
+              <span class="badge badge--soft">Quincho</span>
+            </div>
+            <p class="muted">Opciones de madera, techumbre y terminación.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTICIAS -->
+  <section class="section" id="noticias">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2>Últimas noticias</h2>
+        <p class="section__desc">Puedes cambiar estos textos por novedades reales.</p>
+      </div>
+
+      <div class="news reveal">
+        <article class="newsCard">
+          <p class="newsCard__tag">Novedad</p>
+          <h3>Agenda de trabajos disponible</h3>
+          <p class="muted">Cotiza con comuna y medidas aproximadas para reservar fecha.</p>
+          <a class="link" href="#contacto">Leer más →</a>
+        </article>
+
+        <article class="newsCard">
+          <p class="newsCard__tag">Consejo</p>
+          <h3>Cómo preparar tu proyecto</h3>
+          <p class="muted">Define medidas, material deseado y fecha ideal. Eso acelera la cotización.</p>
+          <a class="link" href="#contacto">Leer más →</a>
+        </article>
+
+        <article class="newsCard">
+          <p class="newsCard__tag">Servicio</p>
+          <h3>Remodelaciones y mejoras</h3>
+          <p class="muted">Pintura, ampliación, cobertizos y estructuras según necesidad.</p>
+          <a class="link" href="#servicios">Ver servicios →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section section--alt" id="contacto">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2>Contacto</h2>
+        <p class="section__desc">Te respondemos por WhatsApp o correo.</p>
+      </div>
+
+      <div class="contact reveal">
+        <div class="contact__info">
+          <div class="contactCard">
+            <strong>WhatsApp / Teléfono</strong>
+            <a class="link" href="tel:+56991201418">+56 9 9120 1418</a>
+          </div>
+
+          <div class="contactCard">
+            <strong>Correo</strong>
+            <a class="link" href="mailto:alejandrovivanco230v@gmail.com">alejandrovivanco230v@gmail.com</a>
+          </div>
+
+          <a class="btn btn--primary" target="_blank" rel="noopener"
+             href="https://wa.me/56991201418?text=Hola%20V%26V%20Construcciones%2C%20me%20gustar%C3%ADa%20cotizar%20un%20trabajo.">
+            Abrir WhatsApp
+          </a>
+        </div>
+
+        <form class="contact__form" id="contactForm">
+          <label>
+            Nombre
+            <input type="text" id="f_name" placeholder="Tu nombre">
+          </label>
+
+          <label>
+            Servicio
+            <select id="f_service">
+              <option>Construcción</option>
+              <option>Remodelación</option>
+              <option>Ampliación</option>
+              <option>Pintura</option>
+              <option>Rejas / Portones</option>
+              <option>Cobertizos / Quinchos</option>
+              <option>Otro</option>
+            </select>
+          </label>
+
+          <label>
+            Mensaje
+            <textarea id="f_msg" rows="4" placeholder="Escribe comuna, medidas y fecha ideal..."></textarea>
+          </label>
+
+          <button class="btn btn--primary w100" type="submit">Enviar por WhatsApp</button>
+          <p class="formHint muted" id="formHint"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> V&V Construcciones SPA</p>
+      <a class="link" href="#top">Volver arriba</a>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a class="waFloat" target="_blank" rel="noopener"
+     href="https://wa.me/56991201418?text=Hola%20V%26V%20Construcciones%2C%20me%20gustar%C3%ADa%20cotizar%20un%20trabajo."
+     aria-label="WhatsApp">
+    WhatsApp
+  </a>
+
+  <!-- Botón arriba -->
+  <button class="toTop" id="toTop" aria-label="Ir arriba">↑</button>
+
+  <!-- Modal imagen -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <button class="modal__close" id="modalClose" aria-label="Cerrar">✕</button>
+    <img class="modal__img" id="modalImg" alt="Imagen ampliada">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
